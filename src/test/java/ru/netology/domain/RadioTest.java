@@ -165,4 +165,13 @@ class RadioTest {
         int actual = rad.clickMinusVolume();
         assertEquals(expected, actual);
     }
+    @Test
+    public void clickMinusVolume4Attempt(){
+        Radio rad = new Radio();
+
+        rad.setCurrentVolume(-1);
+        int expected = 0;
+        int actual = rad.clickMinusVolume();
+        assertEquals(expected, actual);
+    }
 }
